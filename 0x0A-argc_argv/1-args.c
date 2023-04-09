@@ -1,14 +1,16 @@
 #include <stdio.h>
-#include "main.h"
-int main(int argc, char *argv[])
 
+/**
+*main - prints its name
+*
+*@argc: count of the arguements supllied to the program
+*@argv: points to the strings of the arguement passed
+*
+*Return: 0 (success)
+*/
+int main(int argc, char *argv[] __attribute__((unused)))
 {
-
-(void) argv; /*Ignore argv*/
-
 	printf("%d\n", argc - 1);
 
-
-return (0);
-
+	return (0);
 }
